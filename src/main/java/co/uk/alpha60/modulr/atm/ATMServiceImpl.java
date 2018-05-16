@@ -1,6 +1,5 @@
 package co.uk.alpha60.modulr.atm;
 
-import co.uk.alpha60.modulr.Notes;
 import co.uk.alpha60.modulr.account.AccountService;
 
 import co.uk.alpha60.modulr.exceptions.ATMException;
@@ -105,10 +104,10 @@ public class ATMServiceImpl implements ATMService {
    /**
     * Checks that a withdrawal can be made.
     * Assumes that there are no daily limits for withdrawals.
-    * @return true iff there are sufficient notes in the ATM
     * and the account balance is equal to or greater than the amount requested.
     * @throws InvalidWithdrawalAmount when the amount requested cannot be dispensed
     * @throws NoSuchAccountException when an invalid account number is passed
+    * @return true iff there are sufficient notes in the ATM
     */
    private void checkWithdrawalAmount(String accountNumber, Integer amount) throws InvalidWithdrawalAmount, NoSuchAccountException {
       logger.info("Check withdrawal of " + amount + " from account "  + accountNumber);
@@ -175,11 +174,11 @@ public class ATMServiceImpl implements ATMService {
    }
 
    /**
-    * Attempts the provide the correct combination of notes.
+    * Provides the correct combination of notes if one is available.
     * @param noteCounts
     * @param availableNotes
     * @param amount
-    * @return true if the amount requested can be dispensed
+    * @return true iff the amount requested can be dispensed.
     */
    private boolean withdrawalSuccessful(Integer[] noteCounts, Integer[] availableNotes, Integer amount) {
 

@@ -1,4 +1,4 @@
-package co.uk.alpha60.modulr;
+package co.uk.alpha60.modulr.atm;
 
 public enum Notes {
    FIVE(5),
