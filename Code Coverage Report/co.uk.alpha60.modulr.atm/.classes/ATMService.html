@@ -1,0 +1,85 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: ATMService</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">co.uk.alpha60.modulr.atm</a> ]
+</div>
+
+<h1>Coverage Summary for Class: ATMService (co.uk.alpha60.modulr.atm)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+</tr>
+<tr>
+  <td class="name">ATMService</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package co.uk.alpha60.modulr.atm;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import java.math.BigDecimal;
+<i>4</i>&nbsp;
+<i>5</i>&nbsp;public interface ATMService {
+<i>6</i>&nbsp;
+<i>7</i>&nbsp;   /**
+<i>8</i>&nbsp;    * Replenishes the supply of notes in the ATM
+<i>9</i>&nbsp;    * @param fives the number of five pound notes to add to the ATM
+<i>10</i>&nbsp;    * @param tens the number of ten pound notes to add to the ATM
+<i>11</i>&nbsp;    * @param twenties the number of twenty pound notes to add to the ATM
+<i>12</i>&nbsp;    * @param fifties the number of fifty pound notes to add to the ATM
+<i>13</i>&nbsp;    */
+<i>14</i>&nbsp;   public void replenish(Integer fives, Integer tens, Integer twenties, Integer fifties);
+<i>15</i>&nbsp;
+<i>16</i>&nbsp;   /**
+<i>17</i>&nbsp;    * Checks an account balance
+<i>18</i>&nbsp;    * @param accountNumber the number of the account
+<i>19</i>&nbsp;    * @return a string containing the balance of the account
+<i>20</i>&nbsp;    * or an error message if the account could not be found.
+<i>21</i>&nbsp;    */
+<i>22</i>&nbsp;   String checkBalance(String accountNumber);
+<i>23</i>&nbsp;
+<i>24</i>&nbsp;   /**
+<i>25</i>&nbsp;    * Withdraws cash from an account
+<i>26</i>&nbsp;    * @param accountNumber the account&#39;s identifying number
+<i>27</i>&nbsp;    * @param amount the amount to be withdrawn
+<i>28</i>&nbsp;    * @return a string describing the notes making up the withdrawal
+<i>29</i>&nbsp;    * or an error message if the requested amount could not be withdrawn.
+<i>30</i>&nbsp;    */
+<i>31</i>&nbsp;   String withdraw(String accountNumber, Integer amount);
+<i>32</i>&nbsp;
+<i>33</i>&nbsp;   /**
+<i>34</i>&nbsp;    * Computes the total amount of cash available in the ATM
+<i>35</i>&nbsp;    * @return the value of cash stored in the ATM
+<i>36</i>&nbsp;    */
+<i>37</i>&nbsp;   public Integer checkAmountAvailable();
+<i>38</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2018-05-15 22:13</div>
+</div>
+</body>
+</html>

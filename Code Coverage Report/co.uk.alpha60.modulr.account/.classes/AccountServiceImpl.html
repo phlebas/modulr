@@ -1,0 +1,153 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: AccountServiceImpl</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">co.uk.alpha60.modulr.account</a> ]
+</div>
+
+<h1>Coverage Summary for Class: AccountServiceImpl (co.uk.alpha60.modulr.account)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">AccountServiceImpl</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/ 3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (20/ 20)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package co.uk.alpha60.modulr.account;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import co.uk.alpha60.modulr.exceptions.InvalidAmountException;
+<i>4</i>&nbsp;import co.uk.alpha60.modulr.exceptions.NoSuchAccountException;
+<i>5</i>&nbsp;import org.slf4j.Logger;
+<i>6</i>&nbsp;import org.slf4j.LoggerFactory;
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;import java.math.BigDecimal;
+<i>9</i>&nbsp;import java.util.HashMap;
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;import static co.uk.alpha60.modulr.account.AccountNumbers.ACCOUNT_NUMBER_1;
+<i>12</i>&nbsp;import static co.uk.alpha60.modulr.account.AccountNumbers.ACCOUNT_NUMBER_2;
+<i>13</i>&nbsp;import static co.uk.alpha60.modulr.account.AccountNumbers.ACCOUNT_NUMBER_3;
+<i>14</i>&nbsp;/**
+<i>15</i>&nbsp; * An implementation of the AccountService interface.
+<i>16</i>&nbsp; * For the purposes of the exercise the account information is held as
+<i>17</i>&nbsp; * a map of account numbers to account balances.
+<i>18</i>&nbsp; */
+<i>19</i>&nbsp;public class AccountServiceImpl implements AccountService {
+<i>20</i>&nbsp;
+<b class="fc"><i>21</i>&nbsp;   private HashMap&lt;String, BigDecimal&gt; accounts = new HashMap&lt;&gt;();</b>
+<i>22</i>&nbsp;
+<b class="fc"><i>23</i>&nbsp;   Logger logger = LoggerFactory.getLogger(this.getClass());</b>
+<i>24</i>&nbsp;
+<i>25</i>&nbsp;   /**
+<i>26</i>&nbsp;    * Sets up the account service and initialises account data.
+<i>27</i>&nbsp;    */
+<b class="fc"><i>28</i>&nbsp;   public AccountServiceImpl() {</b>
+<b class="fc"><i>29</i>&nbsp;      logger.debug(&quot;Setting up new AccountServiceImpl&quot;);</b>
+<b class="fc"><i>30</i>&nbsp;      accounts.put(ACCOUNT_NUMBER_1, new BigDecimal(2738.57).setScale(2, BigDecimal.ROUND_FLOOR));</b>
+<b class="fc"><i>31</i>&nbsp;      accounts.put(ACCOUNT_NUMBER_2, new BigDecimal(23.00).setScale(2, BigDecimal.ROUND_FLOOR));</b>
+<b class="fc"><i>32</i>&nbsp;      accounts.put(ACCOUNT_NUMBER_3, new BigDecimal(0.00).setScale(2, BigDecimal.ROUND_FLOOR));</b>
+<b class="fc"><i>33</i>&nbsp;   }</b>
+<i>34</i>&nbsp;
+<i>35</i>&nbsp;   /**
+<i>36</i>&nbsp;    * Returns the amount currently held in the designated account.
+<i>37</i>&nbsp;    * @param accountNumber the account number
+<i>38</i>&nbsp;    * @return the amount currently held in the account
+<i>39</i>&nbsp;    * @throws NoSuchAccountException if the account number parameter does not match an existing account
+<i>40</i>&nbsp;    */
+<i>41</i>&nbsp;   public BigDecimal checkBalance(String accountNumber) throws NoSuchAccountException {
+<b class="fc"><i>42</i>&nbsp;      logger.info(&quot;Checking balance of account: &quot; + accountNumber);</b>
+<b class="fc"><i>43</i>&nbsp;      if (accounts.containsKey(accountNumber)) {</b>
+<b class="fc"><i>44</i>&nbsp;         return accounts.get(accountNumber);</b>
+<i>45</i>&nbsp;      } else {
+<b class="fc"><i>46</i>&nbsp;         logger.error(&quot;Account &quot;+ accountNumber + &quot; does not exist&quot;);</b>
+<b class="fc"><i>47</i>&nbsp;         throw new NoSuchAccountException(accountNumber);</b>
+<i>48</i>&nbsp;      }
+<i>49</i>&nbsp;   }
+<i>50</i>&nbsp;
+<i>51</i>&nbsp;   /**
+<i>52</i>&nbsp;    * Withdraws a specified amount from an account.
+<i>53</i>&nbsp;    * @param requestedAmount the amount to be withdrawn
+<i>54</i>&nbsp;    * @throws InvalidAmountException when the amount cannot be withdrawn
+<i>55</i>&nbsp;    * @throws NoSuchAccountException when an invalid account number is passed as a parameter
+<i>56</i>&nbsp;    * @return true iff the amount was successfully withdrawn.
+<i>57</i>&nbsp;    */
+<i>58</i>&nbsp;   public boolean withdrawAmount(String accountNumber, BigDecimal requestedAmount) throws InvalidAmountException, NoSuchAccountException {
+<b class="fc"><i>59</i>&nbsp;      logger.info(&quot;Attempting to withdraw &quot; + requestedAmount.toPlainString() + &quot; from account &quot; + accountNumber);</b>
+<b class="fc"><i>60</i>&nbsp;      BigDecimal balance = checkBalance(accountNumber);</b>
+<b class="fc"><i>61</i>&nbsp;      if (balance.compareTo(requestedAmount) &gt;= 0) {</b>
+<b class="fc"><i>62</i>&nbsp;         accounts.put(accountNumber, balance.subtract(requestedAmount));</b>
+<b class="fc"><i>63</i>&nbsp;         return true;</b>
+<i>64</i>&nbsp;      } else {
+<b class="fc"><i>65</i>&nbsp;         logger.error(&quot;The requested amount could not be withdrawn&quot;);</b>
+<b class="fc"><i>66</i>&nbsp;         throw new InvalidAmountException(&quot;Insufficient funds&quot;);</b>
+<i>67</i>&nbsp;      }
+<i>68</i>&nbsp;   }
+<i>69</i>&nbsp;
+<i>70</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2018-05-15 22:13</div>
+</div>
+</body>
+</html>
