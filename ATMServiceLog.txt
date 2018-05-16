@@ -1449,3 +1449,120 @@
 2018-05-15 22:56:18 INFO  AccountServiceImpl:42 - Checking balance of account: 01002
 2018-05-15 22:56:18 ERROR AccountServiceImpl:65 - The requested amount could not be withdrawn
 2018-05-15 22:56:18 INFO  AccountServiceImpl:42 - Checking balance of account: 01002
+2018-05-16 19:42:53 INFO  ATMServiceImpl:39 - Setting up ATM
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:138 - Withdraw 250 from account 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:115 - Check withdrawal of 250 from account 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:59 - Attempting to withdraw 250 from account 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:80 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:39 - Setting up ATM
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:138 - Withdraw 27 from account 01003
+2018-05-16 19:42:53 INFO  ATMServiceImpl:115 - Check withdrawal of 27 from account 01003
+2018-05-16 19:42:53 INFO  ATMServiceImpl:39 - Setting up ATM
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:94 - Check balance for account: 
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 
+2018-05-16 19:42:53 ERROR AccountServiceImpl:46 - Account  does not exist
+2018-05-16 19:42:53 ERROR ATMServiceImpl:99 - Account not found
+2018-05-16 19:42:53 INFO  ATMServiceImpl:39 - Setting up ATM
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:138 - Withdraw 20 from account 01002
+2018-05-16 19:42:53 INFO  ATMServiceImpl:115 - Check withdrawal of 20 from account 01002
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01002
+2018-05-16 19:42:53 INFO  AccountServiceImpl:59 - Attempting to withdraw 20 from account 01002
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01002
+2018-05-16 19:42:53 INFO  ATMServiceImpl:80 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:138 - Withdraw 20 from account 01002
+2018-05-16 19:42:53 INFO  ATMServiceImpl:115 - Check withdrawal of 20 from account 01002
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01002
+2018-05-16 19:42:53 INFO  ATMServiceImpl:39 - Setting up ATM
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:138 - Withdraw 20 from account 01003
+2018-05-16 19:42:53 INFO  ATMServiceImpl:115 - Check withdrawal of 20 from account 01003
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01003
+2018-05-16 19:42:53 INFO  ATMServiceImpl:39 - Setting up ATM
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:39 - Setting up ATM
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:94 - Check balance for account: 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:39 - Setting up ATM
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:138 - Withdraw 50 from account 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:115 - Check withdrawal of 50 from account 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:59 - Attempting to withdraw 50 from account 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:80 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:39 - Setting up ATM
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:138 - Withdraw 251 from account 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:115 - Check withdrawal of 251 from account 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:39 - Setting up ATM
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:138 - Withdraw 30 from account 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:115 - Check withdrawal of 30 from account 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:39 - Setting up ATM
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:138 - Withdraw 250 from account 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:115 - Check withdrawal of 250 from account 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:59 - Attempting to withdraw 250 from account 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:80 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:138 - Withdraw 20 from account 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:115 - Check withdrawal of 20 from account 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:39 - Setting up ATM
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:138 - Withdraw 20 from account 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:115 - Check withdrawal of 20 from account 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:59 - Attempting to withdraw 20 from account 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:80 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:39 - Setting up ATM
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:138 - Withdraw 4 from account 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:115 - Check withdrawal of 4 from account 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:39 - Setting up ATM
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:65 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  ATMServiceImpl:138 - Withdraw 25 from account 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:115 - Check withdrawal of 25 from account 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:59 - Attempting to withdraw 25 from account 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  ATMServiceImpl:80 - Replenishing ATM.
+2018-05-16 19:42:53 INFO  AccountServiceImpl:59 - Attempting to withdraw 1 from account 
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 
+2018-05-16 19:42:53 ERROR AccountServiceImpl:46 - Account  does not exist
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:59 - Attempting to withdraw 2738.57 from account 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01001
+2018-05-16 19:42:53 INFO  AccountServiceImpl:59 - Attempting to withdraw 1 from account 01003
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01003
+2018-05-16 19:42:53 ERROR AccountServiceImpl:65 - The requested amount could not be withdrawn
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 
+2018-05-16 19:42:53 ERROR AccountServiceImpl:46 - Account  does not exist
+2018-05-16 19:42:53 INFO  AccountServiceImpl:59 - Attempting to withdraw 23.00 from account 01002
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01002
+2018-05-16 19:42:53 INFO  AccountServiceImpl:59 - Attempting to withdraw 10 from account 01002
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01002
+2018-05-16 19:42:53 ERROR AccountServiceImpl:65 - The requested amount could not be withdrawn
+2018-05-16 19:42:53 INFO  AccountServiceImpl:42 - Checking balance of account: 01002

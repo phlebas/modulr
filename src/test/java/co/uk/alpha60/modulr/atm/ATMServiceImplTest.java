@@ -141,6 +141,4 @@ class ATMServiceImplTest {
       result = atmService.withdraw(AccountNumbers.ACCOUNT_NUMBER_2, 20);
       assertEquals(ATMMessages.INSUFFICIENT_FUNDS, result);
    }
-
-   //TODO check multiple withdrawals until account emptied.
 }

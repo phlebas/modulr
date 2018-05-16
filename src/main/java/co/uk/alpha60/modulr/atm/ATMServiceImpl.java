@@ -105,9 +105,11 @@ public class ATMServiceImpl implements ATMService {
     * Checks that a withdrawal can be made.
     * Assumes that there are no daily limits for withdrawals.
     * and the account balance is equal to or greater than the amount requested.
+    *
+    * @param accountNumber the account to withdraw the money from
+    * @param amount the amount to be withdrawn
     * @throws InvalidWithdrawalAmount when the amount requested cannot be dispensed
     * @throws NoSuchAccountException when an invalid account number is passed
-    * @return true iff there are sufficient notes in the ATM
     */
    private void checkWithdrawalAmount(String accountNumber, Integer amount) throws InvalidWithdrawalAmount, NoSuchAccountException {
       logger.info("Check withdrawal of " + amount + " from account "  + accountNumber);
@@ -175,9 +177,9 @@ public class ATMServiceImpl implements ATMService {
 
    /**
     * Provides the correct combination of notes if one is available.
-    * @param noteCounts
-    * @param availableNotes
-    * @param amount
+    * @param noteCounts the current number of notes making up the withdrawal
+    * @param availableNotes the notes left in the ATM
+    * @param amount the amount remaining to be dispensed
     * @return true iff the amount requested can be dispensed.
     */
    private boolean withdrawalSuccessful(Integer[] noteCounts, Integer[] availableNotes, Integer amount) {
